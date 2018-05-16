@@ -1,0 +1,541 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+div {
+	outline: none;
+}
+.header {
+	height: 50px;
+	border-bottom: 1px solid rgba(0,0,0,.0975);
+	background-color: #fff;
+    display: flex;
+    justify-content: center;
+	position:fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+.headerMain{
+	width: 100%;
+	height: 50px;
+	margin:0px auto;
+	z-index:0;
+}
+
+.search-bar {
+	text-align: center;
+	width: 33%;
+}
+
+.search-bar input {
+    margin-top: 10px;
+    margin-left: -13px;
+    width: 198px;
+    text-align: center;
+}
+
+.icon-logo {
+	/*margin-left: 20%;*/
+	margin-top: 5px;
+	display: flex;
+	width: 33%;
+}
+
+.icon-logo h3{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.icon-logo img {
+	background-image: url('./images/photo-logo.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+}
+
+.camera-icon {
+	font-size: 35px;
+}
+.header-block{
+    width: 33%;
+}
+.profile-icons{
+	/*margin-left: 25%;*/
+	margin-top: 8px;
+	width: 33%;
+}
+
+.heart-icon{
+	font-size: 26px;
+}
+
+
+.buttons {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.buttons span{
+	margin-left: 2px;
+	font-size: 16px;
+}
+
+.heart-icon-small {
+	font-size: 18px !important;
+	cursor: pointer;
+}
+
+.heart-icon-small-black {
+	font-size: 18px !important;
+	cursor: pointer;
+}
+
+.heart-icon-small-red {
+	font-size: 18px !important;
+	cursor: pointer;
+	color: crimson;
+}
+
+
+.user-icon {
+	margin-left: 25px;
+	font-size: 26px;
+}
+
+.logout-icon{
+	margin-left: 25px;
+	font-size: 25px;
+}
+
+.clickable{
+	cursor: pointer;
+	color: black;
+}
+.clickable:hover{
+	color: black;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 590px){
+	.icon-logo{
+		display: none;
+	}
+	.search-bar{
+		width: 49%;
+	}
+	.profile-icons{
+		width: 49%;
+	}
+}
+
+@media screen and (max-width: 440px){
+	.search-bar{
+		display: none;
+	}
+}
+
+/*.link {
+	color:'black';
+	text-decoration: 'none';
+}*/
+
+.user-details {
+	margin-top: 25px;
+}
+
+.user-avatar {
+	margin-left: 50px;
+	border-radius: 50px;
+}
+
+.in-row {
+	display: inline-block;
+}
+
+.edit-btn {
+	margin-left: 10px;
+}
+
+.posts-container {
+	margin-top:50px;
+}
+
+.dash-posts{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.container{
+	/*margin-top: 70px;*/
+}
+
+
+body{
+	/*overflow-x: hidden !important;*/
+	overflow-y: auto !important;
+}
+
+.user-post {
+	margin-top: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+.dash-post{
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.dash-post img, div{
+	user-select: none;
+
+}
+
+.dash-post{
+	cursor: pointer;
+}
+/*.modal-backdrop .modal-backdrop-open{*/
+	/*overflow-y: hidden !important;*/
+/*}*/
+.onHoverImage{
+	/*margin-left: 15px;*/
+	width:300px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 300px;
+}
+.user-post .onHoverImage{
+	margin-left: 15px;
+}
+
+.white-heart{
+	color: transparent;
+	margin: 3px;
+	font-size: 18px;
+}
+
+.post-stats{
+	margin: 3px;
+	font-size: 18px;
+	display: none;
+}
+
+.onHoverImage:hover .post-stats{
+	display: block;
+
+}
+
+.onHoverImage:hover .white-heart{
+	color:white;
+
+}
+
+.onHoverImage:hover{
+	background-color: rgba(192,192,192, 0.4);
+}
+
+.no-posts{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+}
+
+.upload-icon{
+	position: fixed;
+	bottom: 35px;
+	right: 35px;
+	/*border: 4px solid black;*/
+	border-radius: 50px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+}
+
+.upload-icon a{
+	padding-top: 2px;
+	padding-left: 2px;
+	font-size: 36px;
+}
+
+.postImage{
+	max-height: 600px;
+	max-width: 800px;
+	cursor: pointer;
+}
+
+
+
+.user-post img, div{
+	user-select: none;
+
+}
+
+.user-post{
+	cursor: pointer;
+}
+
+.post-container{
+	display: flex;
+
+
+}
+.followerBlock{
+	height: 60px;
+	margin-top: 10px;
+}
+
+.followerBlock img{
+	width: 50px;
+	height: 50px;
+	margin-top: 3px;
+	margin-left: 10px;
+	border-radius: 25px;
+	float:left;
+}
+.followerInfo{
+	float:left;
+	margin-left: 10px;
+	margin-top: 5px;
+	font-size: 16px;
+}
+.followerUsername{
+	font-weight: bold;
+}
+.followerName{
+	margin-top: 3px;
+}
+.followerBlock button{
+	margin-top: 10px;
+	float: right;
+	margin-right: 10px;
+	font-weight: bold;
+}
+.modal-photo{
+	flex:1;
+	max-height: 600px;
+	max-width: 800px;
+	margin-left:-15px;
+	margin-top:-15px;
+}
+
+.modal-actions{
+	width: 250px;
+	max-height: 600px;
+	height: 100%;
+	margin-left: 5px;
+}
+
+.owner-block{
+	height: 95px;
+	border-bottom: 1px solid darkgrey;
+}
+
+.owner-photo{
+	width: 30%;
+	display: inline-block;
+}
+.owner-photo img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin-left:10px;
+}
+.owner-info{
+	width: 70%;
+	display: inline-block;
+}
+
+.comments-block{
+	height: 100%;
+	max-height: 425px;
+	border-bottom: 1px solid darkgrey;
+	overflow-y: auto;
+}
+.delete-post{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	cursor: pointer;
+
+}
+
+
+.form-block{
+	height: 80px;
+}
+
+.form-block input{
+	width: 100%;
+	height: 60px;
+	border: none;
+	font-size: 18px;
+	margin-left: 5px;
+	outline: none;
+}
+
+.modal-content{
+	max-height: 600px;
+    box-shadow: none !important;
+}
+
+.search-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.paginationContent{
+	width: 100%;
+	text-align: center;
+}
+.comment{
+	margin-left:5px;
+	word-wrap: break-word;
+	margin-top: 5px;
+	/*display: inline-block;*/
+	width: 210px;
+	float:left;
+}
+.share-btn{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.delete-comment-btn{
+	/*display: inline-block;*/
+	margin-left: 3px;
+	margin-top: 5px;
+	width: 10px;
+	float:left;
+	cursor: pointer;
+}
+
+.ui.grid{
+	margin:0 !important;
+}
+.editBio{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.ui.menu span{
+	font-size: 18px !important;
+}
+
+.editBlock{
+	width: 100%;
+}
+
+.clear-valid{
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	outline: none;
+	height: 28px;
+	font-size: 16px;
+	width: 350px;
+	/*width: 200%;*/
+	padding-left: 10px;
+}
+.invalid-bio{
+	border: 1px solid #ff9f89;
+	border-radius: 3px;
+	outline: none;
+}
+
+.editProfileBlock{
+	display: flex;
+	justify-content: center;
+
+	margin-top: 35px;
+}
+
+.editMain{
+	width: 720px;
+}
+
+.editBio span{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.editForm{
+	margin-top: 40px;
+}
+
+.labelField{
+	float: left;
+}
+.labelField span{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.inputField{
+	float: right;
+	margin-right: 50px;
+}
+
+.rowCont{
+	width: 500px;
+	margin-top: 15px;
+	height: 32px;
+	margin-left: 15px;
+}
+
+.userLink{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.username{
+	font-size: 25px;
+	margin-left: 15px;
+}
+
+.searched-user{
+    display: flex;
+    justify-content: flex-start;
+    /*border: 1px solid black;*/
+}
+
+.searched-user-photo{
+    width: 30%;
+    height: 50px;
+    justify-content: flex-start;
+    /*border: 1px solid black;*/
+}
+.searched-user-photo img{
+
+    width: 35px;
+    height: 35px;
+    margin-top: 7px;
+
+}
+.searched-user-info{
+    width: 70%;
+    height: 50px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 3px;
+    /*border: 1px solid black;*/
+}
+.searched-username{
+    font-weight: bold;
+}
+.searched-name{
+    font-size: 14px;
+}
+
+.user-edit-photo{
+	display: flex;
+	justify-content: center;
+}
